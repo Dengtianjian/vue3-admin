@@ -28,7 +28,7 @@ function selectMenu(key: string, item: MenuOption) {
     item.label as string
   );
 }
-watch(() => pageStorage.routeKey, (v, ov) => {
+watch(() => pageStorage.routeKey, (v) => {
   menuInstRef.value.showOption(v);
 });
 

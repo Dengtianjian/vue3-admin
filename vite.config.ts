@@ -26,7 +26,6 @@ export default defineConfig({
         brotliSize: true,
       }) : null
   ],
-  base: "/dashboard/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -42,7 +41,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         chunkFileNames: "assets/[name]-[hash].js",
-        manualChunks(id, { getModuleIds, getModuleInfo }) {
+        manualChunks(id) {
           if (id.includes('naive-ui')) {
             return "assets/naive-ui/" + id.toString().slice(id.toString().lastIndexOf("/") + 1, id.toString().lastIndexOf(".")) + "[hash]";
           } else if (id.includes('node_modules')) {

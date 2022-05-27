@@ -1,16 +1,16 @@
 const defaultConfig = {
   siteName: "管理后台",
   apiUrl: "",
-  version: "Alpha-0.1.4-20220412"
+  version: "Alpha-0.1.1-20220527"
 }
 
 const production = {
-  apiUrl: "https://api.driver.yuanyunest.cn:88"
+  apiUrl: "http://127.0.0.1"
 }
 
 const development = {
-  apiUrl: "http://192.168.31.159:8887",
-  ...production //* 临时使用
+  apiUrl: "http://127.0.0.1",
+  // ...production //* 临时使用
 }
 
 const env: string = import.meta.env.MODE;

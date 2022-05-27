@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Menu: typeof import('./src/components/base/Menu.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NButtonGroup: typeof import('naive-ui')['NButtonGroup']
     NCard: typeof import('naive-ui')['NCard']
@@ -24,6 +25,12 @@ declare module 'vue' {
     NSpin: typeof import('naive-ui')['NSpin']
     NSwitch: typeof import('naive-ui')['NSwitch']
     NTable: typeof import('naive-ui')['NTable']
+    VFooter: typeof import('./src/components/base/VFooter.vue')['default']
+    VHeader: typeof import('./src/components/base/VHeader.vue')['default']
+    VMenu: typeof import('./src/components/base/VMenu.vue')['default']
+    VPageTabs: typeof import('./src/components/base/VPageTabs.vue')['default']
+    VProvider: typeof import('./src/components/base/VProvider.vue')['default']
+    VRouterView: typeof import('./src/components/base/VRouterView.vue')['default']
     YFooter: typeof import('./src/components/base/YFooter.vue')['default']
     YHeader: typeof import('./src/components/base/YHeader.vue')['default']
     YMenu: typeof import('./src/components/base/YMenu.vue')['default']

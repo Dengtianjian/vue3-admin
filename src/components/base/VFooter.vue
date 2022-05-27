@@ -1,7 +1,7 @@
 <template>
   <n-space justify="center">
     <section class="version">
-      袁云科技有限公司©yuanyunest.com {{ config.version }}
+      vue3-admin {{ config.version }}
     </section>
   </n-space>
 </template>
