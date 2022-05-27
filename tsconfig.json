@@ -1,0 +1,39 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": [
+      "ES2018",
+      "ESNext"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "!/*": [
+        "./src/views/*"
+      ],
+      "#/*": [
+        "./src/components/*"
+      ],
+      "$/*": [
+        "./src/api/*"
+      ],
+      "@Service/*": [
+        "./src/service"
+      ]
+    },
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "references": [
+    {
+      "path": "./tsconfig.vite-config.json"
+    }
+  ]
+}
