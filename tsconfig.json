@@ -26,6 +26,9 @@
       ],
       "@Service/*": [
         "./src/service"
+      ],
+      "@Components/*": [
+        "./src/components"
       ]
     },
     "strictNullChecks": false,

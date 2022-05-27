@@ -1,12 +1,13 @@
 <template>
-  <y-provider>
+1
+  <v-provider>
     <RouterView />
-  </y-provider>
+  </v-provider>
 </template>
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import { YProvider } from "#/index";
+import { VProvider } from "@Components/index";
 </script>
 
 <style>

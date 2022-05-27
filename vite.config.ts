@@ -35,6 +35,7 @@ export default defineConfig({
 
       //* 新的别名
       "@Service": fileURLToPath(new URL("./src/service", import.meta.url)),
+      "@Components": fileURLToPath(new URL("./src/components", import.meta.url)),
     }
   },
   build: {
